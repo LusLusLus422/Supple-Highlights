@@ -1,0 +1,28 @@
+# Core dependencies
+streamlit==1.31.0
+SQLAlchemy==2.0.25
+PyMuPDF==1.22.5
+
+# NLP and Machine Learning
+scikit-learn==1.4.0
+nltk==3.8.1
+sentence-transformers==2.5.1
+torch>=2.7.0
+torchvision
+torchaudio
+
+# Visualization
+pyvis==0.3.2
+wordcloud==1.9.3
+plotly==5.18.0
+networkx==3.2.1
+
+# Testing
+pytest==8.0.0
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Development
+black==24.1.1
+flake8==7.0.0
+isort==5.13.2 
