@@ -4,10 +4,11 @@ A tool for extracting and visualizing text highlights from books and articles.
 
 ## Features
 
-- Extract highlights from PDF documents
-- Process and analyze text using NLP techniques
-- Visualize highlights and their relationships
-- Store and manage highlights in a database
+- Extract highlights from PDF documents with PyMuPDF
+- Process and analyze text using NLP techniques (NLTK, scikit-learn)
+- Generate interactive knowledge graphs and topic visualizations
+- Store and manage highlights in SQLite database
+- Modern Streamlit interface with search and filtering capabilities
 
 ## Installation
 
@@ -28,9 +29,9 @@ source venv/bin/activate  # On Unix/macOS
 pip install -r requirements.txt
 ```
 
-4. Install spaCy language model:
+4. Install required NLTK data:
 ```bash
-python -m spacy download en_core_web_sm
+python -m nltk.downloader punkt stopwords wordnet
 ```
 
 ## Development Setup
@@ -51,18 +52,6 @@ black .
 isort .
 ```
 
-## Testing
-
-Run tests with pytest:
-```bash
-pytest tests/
-```
-
-For coverage report:
-```bash
-pytest --cov=supple_highlights tests/
-```
-
 ## Usage
 
 1. Start the Streamlit application:
@@ -70,23 +59,51 @@ pytest --cov=supple_highlights tests/
 streamlit run app.py
 ```
 
-2. Upload a PDF document
-3. View and manage highlights
-4. Explore visualizations
+2. Upload a PDF document with highlighted text
+3. View and manage extracted highlights
+4. Explore topic modeling and knowledge graph visualizations
+5. Search and filter across all your saved highlights
 
 ## Project Structure
 
 ```
 supple_highlights/
-├── app.py                 # Main Streamlit application
-├── models/               # Database models
-├── processors/          # Text processing modules
-├── visualizers/         # Visualization modules
-├── tests/              # Test suite
-│   ├── unit/
-│   └── integration/
-└── requirements.txt    # Project dependencies
+├── app/                  # Application modules
+│   ├── main.py          # Core application logic
+│   └── nlp_pipeline.py  # NLP processing functionality
+├── app.py               # Main Streamlit application entry point
+├── models/              # Database models and configuration
+│   ├── base.py         # SQLAlchemy setup
+│   └── models.py       # Data models
+├── static/             # Static assets
+├── templates/          # HTML templates
+├── DETAILED_GUIDE.md   # Detailed usage instructions
+├── Project Outline.md  # Project planning and architecture
+├── requirements.txt    # Project dependencies
+└── LICENSE            # MIT License
 ```
+
+## Features in Detail
+
+### PDF Processing
+- Extracts highlighted text from PDF documents
+- Preserves page numbers and highlight positions
+- Supports multiple highlights per page
+
+### Topic Modeling
+- Automatic topic extraction from highlights
+- Interactive topic visualization with word clouds
+- Topic strength analysis
+
+### Knowledge Graph
+- Interactive network visualization
+- Document-topic relationships
+- Customizable graph layout and styling
+
+### Search and Organization
+- Full-text search across all highlights
+- Filter by document or topic
+- Chronological organization
 
 ## Contributing
 
