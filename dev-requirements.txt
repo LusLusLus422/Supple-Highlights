@@ -1,0 +1,9 @@
+# Testing Tools
+pytest==8.0.0  # Testing framework
+pytest-cov==4.1.0  # Test coverage reporting
+pytest-mock==3.12.0  # Mocking for tests
+
+# Code Quality Tools
+black==24.1.1  # Code formatting
+flake8==7.0.0  # Code linting
+isort==5.13.2  # Import sorting 

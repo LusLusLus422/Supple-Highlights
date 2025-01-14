@@ -1,14 +1,57 @@
 # Supple Highlights
 
-A tool for extracting and visualizing text highlights from books and articles.
+An intelligent PDF highlight management system that helps you organize, analyze, and visualize text highlights from your documents using advanced NLP techniques.
 
-## Features
+## Key Features
 
-- Extract highlights from PDF documents with PyMuPDF
-- Process and analyze text using NLP techniques (NLTK, scikit-learn)
-- Generate interactive knowledge graphs and topic visualizations
-- Store and manage highlights in SQLite database
-- Modern Streamlit interface with search and filtering capabilities
+- **Smart Highlight Extraction**
+  - Automatically extract highlighted text from PDF documents
+  - Preserve context, page numbers, and spatial information
+  - Support for multiple highlight colors and annotation types
+
+- **Advanced Text Analysis**
+  - Topic modeling using LDA (Latent Dirichlet Allocation)
+  - Semantic similarity analysis
+  - Automatic keyword extraction and categorization
+  - Natural language processing with NLTK and transformers
+
+- **Interactive Visualizations**
+  - Dynamic knowledge graphs showing document relationships
+  - Interactive topic visualization with word clouds
+  - Highlight distribution analysis
+  - Custom visualization themes
+
+- **Efficient Data Management**
+  - SQLite database for reliable data storage
+  - Full-text search capabilities
+  - Document and highlight metadata tracking
+  - Export functionality for backup and sharing
+
+## System Requirements
+
+- Python 3.11 or higher
+- 4GB RAM minimum (8GB recommended)
+- Operating Systems:
+  - macOS 10.15+
+  - Ubuntu 20.04+ or other modern Linux
+  - Windows 10/11
+
+## System Architecture
+
+### Component Overview
+1. **Frontend Layer (Streamlit)**
+   - Handles user interface and interactions
+   - Renders visualizations and data displays
+
+2. **Processing Layer**
+   - PDF Processor (PyMuPDF) for highlight extraction
+   - NLP Pipeline (NLTK, Gensim) for text analysis
+   - Visualization Engine (PyVis, WordCloud)
+
+3. **Data Layer**
+   - SQLite Database with SQLAlchemy ORM
+   - Efficient file system operations
+   - Memory-optimized data processing
 
 ## Installation
 
@@ -20,99 +63,123 @@ cd supple_highlights
 
 2. Create and activate a virtual environment:
 ```bash
+# macOS/Linux
 python3.11 -m venv venv
-source venv/bin/activate  # On Unix/macOS
+source venv/bin/activate
+
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
 ```
 
 3. Install dependencies:
 ```bash
+# Core dependencies
 pip install -r requirements.txt
+
+# Development dependencies (optional)
+pip install -r dev-requirements.txt
 ```
 
-4. Install required NLTK data:
+4. Download required NLTK data:
 ```bash
-python -m nltk.downloader punkt stopwords wordnet
+python -c "import nltk; nltk.download(['punkt', 'stopwords', 'wordnet'])"
 ```
 
-## Development Setup
+## Quick Start
 
-1. Install development dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-2. Set up pre-commit hooks:
-```bash
-pre-commit install
-```
-
-3. Format code:
-```bash
-black .
-isort .
-```
-
-## Usage
-
-1. Start the Streamlit application:
+1. Start the application:
 ```bash
 streamlit run app.py
 ```
 
-2. Upload a PDF document with highlighted text
-3. View and manage extracted highlights
-4. Explore topic modeling and knowledge graph visualizations
-5. Search and filter across all your saved highlights
+2. Open your browser and navigate to `http://localhost:8501`
+
+3. Upload a PDF document with highlights
+
+4. Explore your highlights through:
+   - Topic visualization
+   - Knowledge graphs
+   - Search functionality
+   - Custom filters
 
 ## Project Structure
 
 ```
 supple_highlights/
-├── app/                  # Application modules
-│   ├── main.py          # Core application logic
-│   └── nlp_pipeline.py  # NLP processing functionality
-├── app.py               # Main Streamlit application entry point
-├── models/              # Database models and configuration
-│   ├── base.py         # SQLAlchemy setup
-│   └── models.py       # Data models
-├── static/             # Static assets
-├── templates/          # HTML templates
-├── DETAILED_GUIDE.md   # Detailed usage instructions
-├── Project Outline.md  # Project planning and architecture
-├── requirements.txt    # Project dependencies
-└── LICENSE            # MIT License
+├── app/                    # Application modules
+│   ├── __init__.py
+│   ├── pdf_processor.py   # PDF processing and extraction
+│   ├── nlp_pipeline.py    # NLP and topic modeling
+│   └── directory_scanner.py # File system operations
+├── models/                 # Database components
+│   ├── base.py            # SQLAlchemy configuration
+│   └── models.py          # Data models and schemas
+├── tests/                 # Test suite
+├── app.py                 # Main application entry point
+├── requirements.txt       # Core dependencies
+└── dev-requirements.txt   # Development dependencies
 ```
 
-## Features in Detail
+## Development
 
-### PDF Processing
-- Extracts highlighted text from PDF documents
-- Preserves page numbers and highlight positions
-- Supports multiple highlights per page
+### Setting Up Development Environment
 
-### Topic Modeling
-- Automatic topic extraction from highlights
-- Interactive topic visualization with word clouds
-- Topic strength analysis
+1. Install all dependencies including development tools:
+```bash
+pip install -r requirements.txt -r dev-requirements.txt
+```
 
-### Knowledge Graph
-- Interactive network visualization
-- Document-topic relationships
-- Customizable graph layout and styling
+2. Install pre-commit hooks:
+```bash
+pre-commit install
+```
 
-### Search and Organization
-- Full-text search across all highlights
-- Filter by document or topic
-- Chronological organization
+### Code Quality
+
+- Run tests:
+```bash
+pytest tests/
+```
+
+- Format code:
+```bash
+black .
+isort .
+```
+
+- Check code quality:
+```bash
+flake8
+```
+
+## Performance Considerations
+
+### Memory Management
+- Chunk-based processing for large PDF files
+- Efficient model caching for NLP operations
+- Lazy loading of visualizations
+
+### Database Optimization
+- Indexed fields for fast queries
+- Proper session handling and connection pooling
+- Atomic operations with error recovery
 
 ## Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- PyMuPDF for PDF processing
+- Streamlit for the web interface
+- NLTK and scikit-learn for NLP capabilities
+- The open-source community for various dependencies 

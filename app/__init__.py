@@ -1,0 +1,3 @@
+"""
+Supple Highlights application package.
+""" 

@@ -1,28 +1,15 @@
-# Core dependencies
-streamlit==1.31.0
-SQLAlchemy==2.0.25
-PyMuPDF==1.22.5
+# Core Application Dependencies
+streamlit==1.31.0  # Web application framework
+SQLAlchemy==2.0.25  # Database ORM
+PyMuPDF==1.22.5  # PDF processing and highlight extraction
 
-# NLP and Machine Learning
-scikit-learn==1.4.0
-nltk==3.8.1
-sentence-transformers==2.5.1
-torch>=2.7.0
-torchvision
-torchaudio
+# Natural Language Processing and Machine Learning
+scikit-learn==1.4.0  # Machine learning utilities
+nltk==3.8.1  # Natural language processing toolkit
+gensim==4.3.2  # Topic modeling and document similarity
 
-# Visualization
-pyvis==0.3.2
-wordcloud==1.9.3
-plotly==5.18.0
-networkx==3.2.1
-
-# Testing
-pytest==8.0.0
-pytest-cov==4.1.0
-pytest-mock==3.12.0
-
-# Development
-black==24.1.1
-flake8==7.0.0
-isort==5.13.2 
+# Data Visualization
+pyvis==0.3.2  # Interactive network visualization
+wordcloud==1.9.3  # Word cloud generation
+matplotlib==3.8.2  # Basic plotting functionality
+networkx==3.2.1  # Graph/network manipulation 
