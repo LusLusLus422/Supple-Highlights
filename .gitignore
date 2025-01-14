@@ -42,5 +42,9 @@ ehthumbs.db
 Thumbs.db
 
 # Database
-*.db
 highlights.db 
+
+# Large model files
+*.gguf
+app/models/llama/
+models/llama/ 

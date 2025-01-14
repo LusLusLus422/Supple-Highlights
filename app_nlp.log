@@ -1,0 +1,960 @@
+2025-01-14 15:06:47,504 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:06:47,504 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:06:49,325 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:06:49,325 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:06:49,443 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:06:49,447 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:06:49,448 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:06:52,236 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:06:52,236 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:06:52,324 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:07:08,394 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:07:08,395 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:07:10,080 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:07:10,080 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:07:10,177 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:07:12,699 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:13,643 - app.nlp_pipeline - WARNING - Generated topic name 'Discomfort Management & Triggers Is This Correct' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:13,643 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:13,643 - app.nlp_pipeline - INFO - Generated fallback topic name: Distraction & Traction
+2025-01-14 15:07:13,644 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:14,504 - app.nlp_pipeline - WARNING - Generated topic name 'Trauma & Body Healing For Her Please Provide The T' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:14,504 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:14,504 - app.nlp_pipeline - INFO - Generated fallback topic name: Trauma & Body
+2025-01-14 15:07:14,504 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:15,102 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Stoic Situation Thinking Here
+2025-01-14 15:07:15,102 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:15,853 - app.nlp_pipeline - WARNING - Generated topic name 'Happiness & Yoga For Optimism & Reassurance' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:15,853 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:15,853 - app.nlp_pipeline - INFO - Generated fallback topic name: Happiness & Yoga
+2025-01-14 15:07:15,854 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:16,540 - app.nlp_pipeline - WARNING - Generated topic name 'She & Her Striiv Pedometer Journey' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:16,540 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:16,540 - app.nlp_pipeline - INFO - Generated fallback topic name: She & Her
+2025-01-14 15:07:16,540 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:17,247 - app.nlp_pipeline - WARNING - Generated topic name 'Science & Consciousness Today: Great Miracle' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:17,247 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:17,247 - app.nlp_pipeline - INFO - Generated fallback topic name: Science & Miracle
+2025-01-14 15:07:17,248 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:18,109 - app.nlp_pipeline - WARNING - Generated topic name 'God & Beliefs We Hold Dear Please Let Me Know If Y' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:18,109 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:18,109 - app.nlp_pipeline - INFO - Generated fallback topic name: God & Beliefs
+2025-01-14 15:07:18,110 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:18,972 - app.nlp_pipeline - WARNING - Generated topic name 'Secrets Of The Esoteric His Please Let Me Know If ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:18,972 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:18,972 - app.nlp_pipeline - INFO - Generated fallback topic name: Secret & Esoteric
+2025-01-14 15:07:18,973 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:19,834 - app.nlp_pipeline - WARNING - Generated topic name 'Brain Coding & Neurons Further Please Let Me Know ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:19,834 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:19,834 - app.nlp_pipeline - INFO - Generated fallback topic name: Brain & Neurons
+2025-01-14 15:07:19,834 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:20,477 - app.nlp_pipeline - WARNING - Generated topic name 'Sunday Funday Is This Clear' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:20,477 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:20,477 - app.nlp_pipeline - INFO - Generated fallback topic name: Sunday & Day
+2025-01-14 15:07:20,478 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:21,332 - app.nlp_pipeline - WARNING - Generated topic name 'Morphic Memory & Nature Resonance Please Let Me Kn' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:21,332 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:21,332 - app.nlp_pipeline - INFO - Generated fallback topic name: Morphic & Memory
+2025-01-14 15:07:21,332 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:21,886 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Feel & Try
+2025-01-14 15:07:21,887 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:22,746 - app.nlp_pipeline - WARNING - Generated topic name 'Wegner & White Bear Thinking' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:22,746 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:22,746 - app.nlp_pipeline - INFO - Generated fallback topic name: Wegner & White
+2025-01-14 15:07:22,746 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:23,520 - app.nlp_pipeline - WARNING - Generated topic name 'Live & Admirable Man'S Opinion On Immortality' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:23,520 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:23,520 - app.nlp_pipeline - INFO - Generated fallback topic name: Live & Admirable
+2025-01-14 15:07:23,520 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:24,315 - app.nlp_pipeline - WARNING - Generated topic name 'Writing & Reason Please Let Me Know If You Need An' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:24,315 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:24,315 - app.nlp_pipeline - INFO - Generated fallback topic name: Writing & Gtd
+2025-01-14 15:07:24,316 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:25,177 - app.nlp_pipeline - WARNING - Generated topic name 'Must We & Conviction Assumptions Essentialist Plea' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:25,177 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:25,177 - app.nlp_pipeline - INFO - Generated fallback topic name: Must & We
+2025-01-14 15:07:25,177 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:26,038 - app.nlp_pipeline - WARNING - Generated topic name 'Prioritized Hearts & Communities Would You Like Me' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:26,038 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:26,038 - app.nlp_pipeline - INFO - Generated fallback topic name: Life & Hearts
+2025-01-14 15:07:26,038 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:26,658 - app.nlp_pipeline - WARNING - Generated topic name 'New Fields Of Higher Appearance' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:26,658 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:26,658 - app.nlp_pipeline - INFO - Generated fallback topic name: New & Fields
+2025-01-14 15:07:26,659 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:27,303 - app.nlp_pipeline - WARNING - Generated topic name 'Everyone Takes Executive Tough Size Challenge' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:27,303 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:27,303 - app.nlp_pipeline - INFO - Generated fallback topic name: Everyone & Takes
+2025-01-14 15:07:27,303 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:27,967 - app.nlp_pipeline - WARNING - Generated topic name 'Ideas Write Understand Experts Anyway' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:27,967 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:27,967 - app.nlp_pipeline - INFO - Generated fallback topic name: Ideas & Write
+2025-01-14 15:07:27,967 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:28,676 - app.nlp_pipeline - WARNING - Generated topic name 'Machine True 12Th 13Th Situated' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:28,676 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:28,676 - app.nlp_pipeline - INFO - Generated fallback topic name: Machine & True
+2025-01-14 15:07:28,676 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:29,273 - app.nlp_pipeline - WARNING - Generated topic name 'He Could His Noise Idea' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:29,273 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:29,273 - app.nlp_pipeline - INFO - Generated fallback topic name: He & Could
+2025-01-14 15:07:29,273 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:29,827 - app.nlp_pipeline - WARNING - Generated topic name 'Your Output Training Use Free' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:29,827 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:29,827 - app.nlp_pipeline - INFO - Generated fallback topic name: Your & Output
+2025-01-14 15:07:29,827 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:30,360 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Argument & Draft
+2025-01-14 15:07:30,360 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:31,178 - app.nlp_pipeline - WARNING - Generated topic name 'Information & Perspectives Please Let Me Know If Y' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:31,178 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:31,178 - app.nlp_pipeline - INFO - Generated fallback topic name: Information & Perception
+2025-01-14 15:07:31,179 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:32,040 - app.nlp_pipeline - WARNING - Generated topic name 'Deep Work & Not Please Let Me Know If You Need Me ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:32,040 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:32,040 - app.nlp_pipeline - INFO - Generated fallback topic name: Deep & Work
+2025-01-14 15:07:32,040 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:32,902 - app.nlp_pipeline - WARNING - Generated topic name 'Metaphysical Feline Problems In Science Please Let' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:32,902 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:32,902 - app.nlp_pipeline - INFO - Generated fallback topic name: Metaphysics & Cat
+2025-01-14 15:07:32,902 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:33,764 - app.nlp_pipeline - WARNING - Generated topic name 'Layered Slides & Your Absorption Want Please Let M' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:33,764 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:33,764 - app.nlp_pipeline - INFO - Generated fallback topic name: Layer & Slide
+2025-01-14 15:07:33,765 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:34,472 - app.nlp_pipeline - WARNING - Generated topic name 'Suffering Identity Specialization Necessary Trees' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:34,472 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:34,472 - app.nlp_pipeline - INFO - Generated fallback topic name: Suffering & Identity
+2025-01-14 15:07:34,472 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:35,245 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Invest & Future Goals
+2025-01-14 15:07:35,245 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:36,107 - app.nlp_pipeline - WARNING - Generated topic name 'Intrinsic Why & Purpose Talk Please Let Me Know If' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:36,107 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:36,107 - app.nlp_pipeline - INFO - Generated fallback topic name: Intrinsic & Talk
+2025-01-14 15:07:36,108 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:36,881 - app.nlp_pipeline - WARNING - Generated topic name 'Essential Rhetoric For Inspiration & Concrete Idea' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:36,881 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:36,881 - app.nlp_pipeline - INFO - Generated fallback topic name: Essential & Intent
+2025-01-14 15:07:36,882 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:37,633 - app.nlp_pipeline - WARNING - Generated topic name 'Th Century Calendar Influence On Prescribed Centur' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:37,633 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:37,633 - app.nlp_pipeline - INFO - Generated fallback topic name: 20Th & Calendar
+2025-01-14 15:07:37,634 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:38,494 - app.nlp_pipeline - WARNING - Generated topic name 'Clever Decisions & Good Were Please Let Me Know If' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:38,494 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:38,494 - app.nlp_pipeline - INFO - Generated fallback topic name: Clever & Good
+2025-01-14 15:07:38,495 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:39,070 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Me & Carriage
+2025-01-14 15:07:39,071 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:39,932 - app.nlp_pipeline - WARNING - Generated topic name 'Structure & Right Tasks Please Let Me Know If You ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:39,932 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:39,933 - app.nlp_pipeline - INFO - Generated fallback topic name: Structure & Workflow
+2025-01-14 15:07:39,933 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:40,619 - app.nlp_pipeline - WARNING - Generated topic name 'Positive Subconscious Suggestion Auto Desires' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:40,619 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:40,619 - app.nlp_pipeline - INFO - Generated fallback topic name: Positive & Subconscious
+2025-01-14 15:07:40,619 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:41,328 - app.nlp_pipeline - WARNING - Generated topic name 'Material Schrödinger Overthrown Protons Quantum' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:41,328 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:41,328 - app.nlp_pipeline - INFO - Generated fallback topic name: Material & Schrödinger
+2025-01-14 15:07:41,328 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:42,036 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Failure & Strengths
+2025-01-14 15:07:42,037 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:42,679 - app.nlp_pipeline - WARNING - Generated topic name 'After He & Men'S Portion' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:42,679 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:42,679 - app.nlp_pipeline - INFO - Generated fallback topic name: Had & Men
+2025-01-14 15:07:42,679 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:43,431 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Pleasure-Driven Motivation & Philosophy
+2025-01-14 15:07:43,431 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:44,007 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Indistractable You
+2025-01-14 15:07:44,008 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:44,672 - app.nlp_pipeline - WARNING - Generated topic name 'Treat Things Specific Provides Pinstripes' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:44,672 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:44,672 - app.nlp_pipeline - INFO - Generated fallback topic name: Treat & Things
+2025-01-14 15:07:44,673 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:45,296 - app.nlp_pipeline - WARNING - Generated topic name 'Act & Plan Men'S Clarity' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:45,296 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:45,296 - app.nlp_pipeline - INFO - Generated fallback topic name: Acting & Happens
+2025-01-14 15:07:45,297 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:46,159 - app.nlp_pipeline - WARNING - Generated topic name 'Essential Words & Activities Please Let Me Know If' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:46,159 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:46,159 - app.nlp_pipeline - INFO - Generated fallback topic name: Essentialism & Less
+2025-01-14 15:07:46,159 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:47,000 - app.nlp_pipeline - WARNING - Generated topic name 'Matter & Moved Please Let Me Know If You Need Any ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:47,000 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:47,000 - app.nlp_pipeline - INFO - Generated fallback topic name: Matter & Mind
+2025-01-14 15:07:47,000 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:47,863 - app.nlp_pipeline - WARNING - Generated topic name 'Unique Traits & Embark Please Let Me Know If You N' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:47,863 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:47,863 - app.nlp_pipeline - INFO - Generated fallback topic name: Unique & Traits
+2025-01-14 15:07:47,863 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:48,439 - app.nlp_pipeline - WARNING - Generated topic name 'My New Body Organ & Health' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:48,439 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:48,439 - app.nlp_pipeline - INFO - Generated fallback topic name: Body & Health
+2025-01-14 15:07:48,440 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:49,302 - app.nlp_pipeline - WARNING - Generated topic name 'Permanent Notes Please Let Me Know If You Need Any' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:49,302 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:49,302 - app.nlp_pipeline - INFO - Generated fallback topic name: Notes & Permanent
+2025-01-14 15:07:49,302 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:49,877 - app.nlp_pipeline - WARNING - Generated topic name 'More Your Study Develop Arguments' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:49,877 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:49,877 - app.nlp_pipeline - INFO - Generated fallback topic name: More & Your
+2025-01-14 15:07:49,877 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:50,630 - app.nlp_pipeline - WARNING - Generated topic name 'Grof Psychological Over 1887 Unvarying' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:50,631 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:50,631 - app.nlp_pipeline - INFO - Generated fallback topic name: Grof & Psychological
+2025-01-14 15:07:50,631 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:51,251 - app.nlp_pipeline - WARNING - Generated topic name 'Write & Make Notes Once & Down' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:51,251 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:51,251 - app.nlp_pipeline - INFO - Generated fallback topic name: Write & Notes
+2025-01-14 15:07:51,251 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:52,113 - app.nlp_pipeline - WARNING - Generated topic name 'Clarity & Roles Team Structure Plan Please Let Me ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:52,114 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:52,114 - app.nlp_pipeline - INFO - Generated fallback topic name: Clarity & Roles
+2025-01-14 15:07:52,114 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:52,975 - app.nlp_pipeline - WARNING - Generated topic name 'Remembrane Perceptual History Space Sensual' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:52,975 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:52,975 - app.nlp_pipeline - INFO - Generated fallback topic name: Remembrane & Perceptual
+2025-01-14 15:07:52,976 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:53,531 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Slip & Develop
+2025-01-14 15:07:53,532 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:54,247 - app.nlp_pipeline - WARNING - Generated topic name 'Burning Desire For Implementation & Thorough Plann' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:54,247 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:54,247 - app.nlp_pipeline - INFO - Generated fallback topic name: Burning & Desire
+2025-01-14 15:07:54,247 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:54,895 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Absolute Smooth Functioning Equation
+2025-01-14 15:07:54,896 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:55,741 - app.nlp_pipeline - WARNING - Generated topic name 'Modern Survival Status Please Let Me Know If You N' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:55,741 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:55,741 - app.nlp_pipeline - INFO - Generated fallback topic name: Slave & Survival
+2025-01-14 15:07:55,742 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:56,588 - app.nlp_pipeline - WARNING - Generated topic name 'Happiness & Negativity: A Path To Positivity' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:56,588 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:56,588 - app.nlp_pipeline - INFO - Generated fallback topic name: Happiness & Negative
+2025-01-14 15:07:56,588 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:57,458 - app.nlp_pipeline - WARNING - Generated topic name 'Sufi Shore Italo Calvino Anonymous' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:57,458 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:57,458 - app.nlp_pipeline - INFO - Generated fallback topic name: Suﬁ & Shore
+2025-01-14 15:07:57,459 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:58,328 - app.nlp_pipeline - WARNING - Generated topic name 'Tantalus' Curse Of Reach Would You Like Me To Sugg' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:58,328 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:58,328 - app.nlp_pipeline - INFO - Generated fallback topic name: Tantalus & His
+2025-01-14 15:07:58,328 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:58,872 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Universe & Wonder
+2025-01-14 15:07:58,872 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:07:59,548 - app.nlp_pipeline - WARNING - Generated topic name 'Hundreds Of Nature & Garden Dialogue' doesn't meet rules, falling back to simple naming
+2025-01-14 15:07:59,548 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:07:59,548 - app.nlp_pipeline - INFO - Generated fallback topic name: Dialogue & Hundreds
+2025-01-14 15:07:59,548 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:08:00,249 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Ether Minds Form Before
+2025-01-14 15:08:00,249 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:08:01,129 - app.nlp_pipeline - WARNING - Generated topic name 'Avoiding Windbags & Expressing Thoughts Safely Ple' doesn't meet rules, falling back to simple naming
+2025-01-14 15:08:01,129 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:08:01,129 - app.nlp_pipeline - INFO - Generated fallback topic name: Avoid & Their
+2025-01-14 15:08:01,129 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:08:02,006 - app.nlp_pipeline - WARNING - Generated topic name 'Criticism & Personality Would You Like Me To Creat' doesn't meet rules, falling back to simple naming
+2025-01-14 15:08:02,006 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:08:02,006 - app.nlp_pipeline - INFO - Generated fallback topic name: Criticism & Personality
+2025-01-14 15:08:02,007 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:08:02,666 - app.nlp_pipeline - WARNING - Generated topic name 'Trying My React & Regulating Loosely' doesn't meet rules, falling back to simple naming
+2025-01-14 15:08:02,666 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:08:02,666 - app.nlp_pipeline - INFO - Generated fallback topic name: Trying & My
+2025-01-14 15:08:02,759 - root - INFO - Successfully created 68 topics
+2025-01-14 15:11:30,421 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:11:30,421 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:11:32,421 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:11:32,421 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:11:32,542 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:11:35,309 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:11:35,309 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:11:37,138 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:11:37,138 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:11:37,233 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:11:39,678 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:40,787 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: My Body Heals
+2025-01-14 15:11:40,788 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:41,681 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Stoic Situation
+2025-01-14 15:11:41,681 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:42,913 - app.nlp_pipeline - WARNING - Generated topic name 'Happiness Yoga Help Please Provide The Topic Name ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:42,913 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:42,913 - app.nlp_pipeline - INFO - Generated fallback topic name: Happiness & Yoga
+2025-01-14 15:11:42,913 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:44,120 - app.nlp_pipeline - WARNING - Generated topic name 'Brain & Body Please Provide Your Suggested Topic N' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:44,120 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:44,120 - app.nlp_pipeline - INFO - Generated fallback topic name: Brain & Neurons
+2025-01-14 15:11:44,121 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:45,348 - app.nlp_pipeline - WARNING - Generated topic name 'Morphic Nature Memory Resonance Inherent Please Le' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:45,348 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:45,348 - app.nlp_pipeline - INFO - Generated fallback topic name: Morphic & Nature
+2025-01-14 15:11:45,348 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:46,261 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Myself Letting Ingrained Even
+2025-01-14 15:11:46,261 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:47,243 - app.nlp_pipeline - WARNING - Generated topic name 'Structure Clarity Different Good Do' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:47,243 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:47,243 - app.nlp_pipeline - INFO - Generated fallback topic name: Structure & Clarity
+2025-01-14 15:11:47,243 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:48,245 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: She Striivs & Pedometer
+2025-01-14 15:11:48,246 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:49,250 - app.nlp_pipeline - WARNING - Generated topic name 'New Fields Of Higher Appearance' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:49,250 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:49,250 - app.nlp_pipeline - INFO - Generated fallback topic name: New & Fields
+2025-01-14 15:11:49,251 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:50,388 - app.nlp_pipeline - WARNING - Generated topic name 'Please Let Me Know If This Is What You Were Lookin' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:50,388 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:50,388 - app.nlp_pipeline - INFO - Generated fallback topic name: Wegner & White
+2025-01-14 15:11:50,389 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:51,371 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Within God'S Embrace
+2025-01-14 15:11:51,371 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:52,264 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:52,264 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:52,264 - app.nlp_pipeline - INFO - Generated fallback topic name: Sunday & Day
+2025-01-14 15:11:52,265 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:53,202 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Write & Understand Ideas
+2025-01-14 15:11:53,202 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:54,161 - app.nlp_pipeline - WARNING - Generated topic name 'Distraction Management & Comfort Ll' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:54,161 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:54,161 - app.nlp_pipeline - INFO - Generated fallback topic name: Distraction & Discomfort
+2025-01-14 15:11:54,161 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:55,389 - app.nlp_pipeline - WARNING - Generated topic name 'Secret_His_Force_Books_Esoteric' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:55,389 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:55,389 - app.nlp_pipeline - INFO - Generated fallback topic name: Secret & His
+2025-01-14 15:11:55,389 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:56,257 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:56,257 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:56,257 - app.nlp_pipeline - INFO - Generated fallback topic name: Layer & You
+2025-01-14 15:11:56,258 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:57,264 - app.nlp_pipeline - WARNING - Generated topic name 'Live Admirable Man Opinion They' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:57,264 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:57,264 - app.nlp_pipeline - INFO - Generated fallback topic name: Live & Admirable
+2025-01-14 15:11:57,265 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:58,358 - app.nlp_pipeline - WARNING - Generated topic name 'Please Create A Topic Name Based On The Given Keyw' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:58,358 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:58,358 - app.nlp_pipeline - INFO - Generated fallback topic name: Life & Choices
+2025-01-14 15:11:58,359 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:11:59,407 - app.nlp_pipeline - WARNING - Generated topic name 'Courage Must We Convict Our Assumptions' doesn't meet rules, falling back to simple naming
+2025-01-14 15:11:59,407 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:11:59,407 - app.nlp_pipeline - INFO - Generated fallback topic name: Courage & Must
+2025-01-14 15:11:59,408 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:00,503 - app.nlp_pipeline - WARNING - Generated topic name 'Machine True 12Th Articulate 13Th' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:00,503 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:00,503 - app.nlp_pipeline - INFO - Generated fallback topic name: Machine & True
+2025-01-14 15:12:00,503 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:01,710 - app.nlp_pipeline - WARNING - Generated topic name 'Information Perspectives Please Let Me Know If You' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:01,710 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:01,710 - app.nlp_pipeline - INFO - Generated fallback topic name: Information & Perception
+2025-01-14 15:12:01,710 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:02,693 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Gtd Complexity Reason Taken
+2025-01-14 15:12:02,693 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:03,609 - app.nlp_pipeline - WARNING - Generated topic name 'Deep Work Tools Not Simple' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:03,609 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:03,609 - app.nlp_pipeline - INFO - Generated fallback topic name: Deep & Work
+2025-01-14 15:12:03,609 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:04,525 - app.nlp_pipeline - WARNING - Generated topic name 'He Could His Context Would' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:04,525 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:04,525 - app.nlp_pipeline - INFO - Generated fallback topic name: He & Could
+2025-01-14 15:12:04,525 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:05,576 - app.nlp_pipeline - WARNING - Generated topic name 'Contained World Matter Upaniṣhads Within' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:05,576 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:05,576 - app.nlp_pipeline - INFO - Generated fallback topic name: Contained & World
+2025-01-14 15:12:05,576 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:06,536 - app.nlp_pipeline - WARNING - Generated topic name 'Back & Today - Joke Form' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:06,536 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:06,536 - app.nlp_pipeline - INFO - Generated fallback topic name: Back & Today
+2025-01-14 15:12:06,536 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:07,430 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:07,430 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:07,430 - app.nlp_pipeline - INFO - Generated fallback topic name: Failure & Lacking
+2025-01-14 15:12:07,430 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:08,570 - app.nlp_pipeline - WARNING - Generated topic name 'Feeling Negative & Unhappy Seemed To Have A Conclu' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:08,570 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:08,570 - app.nlp_pipeline - INFO - Generated fallback topic name: Feel & Negative
+2025-01-14 15:12:08,570 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:09,754 - app.nlp_pipeline - WARNING - Generated topic name 'Please Let Me Know If This Is Clear And If You Hav' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:09,754 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:09,754 - app.nlp_pipeline - INFO - Generated fallback topic name: Suffering & Identity
+2025-01-14 15:12:09,754 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:10,983 - app.nlp_pipeline - WARNING - Generated topic name 'Intrinsic Talk Purpose Please Provide The Topic Na' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:10,983 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:10,983 - app.nlp_pipeline - INFO - Generated fallback topic name: Intrinsic & Talk
+2025-01-14 15:12:10,984 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:12,034 - app.nlp_pipeline - WARNING - Generated topic name 'Positive Subconscious Suggestion Auto Desires' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:12,034 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:12,034 - app.nlp_pipeline - INFO - Generated fallback topic name: Positive & Subconscious
+2025-01-14 15:12:12,034 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:13,086 - app.nlp_pipeline - WARNING - Generated topic name 'Cat Metaphysics Problems Science Hypothesis' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:13,086 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:13,086 - app.nlp_pipeline - INFO - Generated fallback topic name: Cat & Metaphysics
+2025-01-14 15:12:13,086 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:14,315 - app.nlp_pipeline - WARNING - Generated topic name 'Inspiring Rhetoric For Essential Intent Please Ent' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:14,315 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:14,315 - app.nlp_pipeline - INFO - Generated fallback topic name: Essential & Intent
+2025-01-14 15:12:14,316 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:15,208 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:15,208 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:15,208 - app.nlp_pipeline - INFO - Generated fallback topic name: More & Interested
+2025-01-14 15:12:15,208 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:16,014 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:16,014 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:16,014 - app.nlp_pipeline - INFO - Generated fallback topic name: Simulation & Acting
+2025-01-14 15:12:16,014 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:17,233 - app.nlp_pipeline - WARNING - Generated topic name 'Indistractable You Please Let Me Know If You Need ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:17,233 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:17,233 - app.nlp_pipeline - INFO - Generated fallback topic name: Indistractable & Your
+2025-01-14 15:12:17,233 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:18,363 - app.nlp_pipeline - WARNING - Generated topic name 'Esoteric Bhagavad Miracle Gita Western Naming' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:18,363 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:18,363 - app.nlp_pipeline - INFO - Generated fallback topic name: Esoteric & Bhagavad
+2025-01-14 15:12:18,363 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:19,608 - app.nlp_pipeline - WARNING - Generated topic name 'Happiness Path Described Negative & Negativity Ple' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:19,608 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:19,608 - app.nlp_pipeline - INFO - Generated fallback topic name: Happiness & Negative
+2025-01-14 15:12:19,609 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:20,857 - app.nlp_pipeline - WARNING - Generated topic name 'Trigger Action & Distraction Please Let Me Know If' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:20,857 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:20,857 - app.nlp_pipeline - INFO - Generated fallback topic name: Triggers & Traction
+2025-01-14 15:12:20,857 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:21,705 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:21,705 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:21,705 - app.nlp_pipeline - INFO - Generated fallback topic name: Had & Men
+2025-01-14 15:12:21,705 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:22,765 - app.nlp_pipeline - WARNING - Generated topic name 'Anonymous Shore Suﬁ Dieter Noise' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:22,765 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:22,765 - app.nlp_pipeline - INFO - Generated fallback topic name: Noise & Dieter
+2025-01-14 15:12:22,765 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:23,867 - app.nlp_pipeline - WARNING - Generated topic name 'Pleasure & Pain Driven Motivation' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:23,867 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:23,867 - app.nlp_pipeline - INFO - Generated fallback topic name: Pleasure & Pain
+2025-01-14 15:12:23,868 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:24,837 - app.nlp_pipeline - WARNING - Generated topic name 'Your Output Training Use Activities' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:24,837 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:24,837 - app.nlp_pipeline - INFO - Generated fallback topic name: Your & Output
+2025-01-14 15:12:24,837 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:25,878 - app.nlp_pipeline - WARNING - Generated topic name 'Universe Towards Indifference Lose Wonder' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:25,878 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:25,878 - app.nlp_pipeline - INFO - Generated fallback topic name: Universe & Towards
+2025-01-14 15:12:25,878 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:26,830 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Treat Yourself Well
+2025-01-14 15:12:26,830 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:28,102 - app.nlp_pipeline - WARNING - Generated topic name 'Executives' Expectations For Size What Is The Topi' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:28,102 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:28,102 - app.nlp_pipeline - INFO - Generated fallback topic name: Executive & Expect
+2025-01-14 15:12:28,103 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:29,369 - app.nlp_pipeline - WARNING - Generated topic name 'Essentialism & Less Activities For Word Done Pleas' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:29,369 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:29,369 - app.nlp_pipeline - INFO - Generated fallback topic name: Essentialism & Less
+2025-01-14 15:12:29,369 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:30,637 - app.nlp_pipeline - WARNING - Generated topic name 'Investing Towards Future Goals Please Let Me Know ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:30,637 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:30,637 - app.nlp_pipeline - INFO - Generated fallback topic name: Goal & Toward
+2025-01-14 15:12:30,637 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:31,615 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Clever People Two Damage
+2025-01-14 15:12:31,615 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:32,706 - app.nlp_pipeline - WARNING - Generated topic name 'Slip & Box Became Develop & His' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:32,706 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:32,706 - app.nlp_pipeline - INFO - Generated fallback topic name: Slip & Box
+2025-01-14 15:12:32,707 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:33,755 - app.nlp_pipeline - WARNING - Generated topic name 'Will Terms Explain Course Plan' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:33,755 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:33,755 - app.nlp_pipeline - INFO - Generated fallback topic name: Will & Terms
+2025-01-14 15:12:33,755 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:34,824 - app.nlp_pipeline - WARNING - Generated topic name 'Everyone'S Team Takes Intent Insight' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:34,824 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:34,825 - app.nlp_pipeline - INFO - Generated fallback topic name: Everyone & Team
+2025-01-14 15:12:34,825 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:35,783 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Quantum Materials Description
+2025-01-14 15:12:35,784 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:36,765 - app.nlp_pipeline - WARNING - Generated topic name 'Write Down Notes Once & Make' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:36,765 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:36,765 - app.nlp_pipeline - INFO - Generated fallback topic name: Write & Notes
+2025-01-14 15:12:36,765 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:37,816 - app.nlp_pipeline - WARNING - Generated topic name 'Remembrance & Perception Throughout History' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:37,816 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:37,816 - app.nlp_pipeline - INFO - Generated fallback topic name: Remembrane & Perceptual
+2025-01-14 15:12:37,816 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:38,800 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Ether Should Minds Form
+2025-01-14 15:12:38,801 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:39,961 - app.nlp_pipeline - WARNING - Generated topic name 'Burning Desire For Goal Implementation & Thorough ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:39,961 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:39,961 - app.nlp_pipeline - INFO - Generated fallback topic name: Burning & Desire
+2025-01-14 15:12:39,962 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:41,145 - app.nlp_pipeline - WARNING - Generated topic name 'Heeding Opinions & Avoiding Disheartening Theirs' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:41,145 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:41,145 - app.nlp_pipeline - INFO - Generated fallback topic name: Opinions & Avoid
+2025-01-14 15:12:41,146 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:42,221 - app.nlp_pipeline - WARNING - Generated topic name 'Make Permanent Notes & Ideally Fleeting' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:42,221 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:42,221 - app.nlp_pipeline - INFO - Generated fallback topic name: Notes & Permanent
+2025-01-14 15:12:42,222 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:43,300 - app.nlp_pipeline - WARNING - Generated topic name 'Th Century Calendar Icons Prescribed' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:43,300 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:43,300 - app.nlp_pipeline - INFO - Generated fallback topic name: 20Th & Calendar
+2025-01-14 15:12:43,300 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:44,309 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Modern Slave Survival Status
+2025-01-14 15:12:44,309 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:45,589 - app.nlp_pipeline - WARNING - Generated topic name 'His Tantalus Curse Reach Please Let Me Know If You' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:45,589 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:45,589 - app.nlp_pipeline - INFO - Generated fallback topic name: Tantalus & His
+2025-01-14 15:12:45,589 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:46,528 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:46,528 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:46,528 - app.nlp_pipeline - INFO - Generated fallback topic name: Editor & Actually
+2025-01-14 15:12:46,528 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:47,500 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:47,500 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:47,500 - app.nlp_pipeline - INFO - Generated fallback topic name: Over & 1887
+2025-01-14 15:12:47,500 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:12:48,785 - app.nlp_pipeline - WARNING - Generated topic name 'Think & Forbid Please Create A Clear, Concise Name' doesn't meet rules, falling back to simple naming
+2025-01-14 15:12:48,785 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:12:48,785 - app.nlp_pipeline - INFO - Generated fallback topic name: Think & Forbidden
+2025-01-14 15:12:48,877 - root - INFO - Successfully created 66 topics
+2025-01-14 15:27:17,520 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:27:17,521 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:27:17,521 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:27:17,521 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:27:19,329 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:27:19,329 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:27:19,450 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:27:19,604 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:27:19,604 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:27:19,692 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:27:24,192 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:27:24,196 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:27:26,039 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:27:26,039 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:27:26,133 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:27:29,031 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:30,452 - app.nlp_pipeline - WARNING - Generated topic name 'Words, Title Case, No Articles, No Punctuation Exc' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:30,452 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:30,452 - app.nlp_pipeline - INFO - Generated fallback topic name: Courage & Unique
+2025-01-14 15:27:30,453 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:31,681 - app.nlp_pipeline - WARNING - Generated topic name 'Healing Terror Please Choose The Next Topic From T' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:31,681 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:31,681 - app.nlp_pipeline - INFO - Generated fallback topic name: Trauma & Body
+2025-01-14 15:27:31,682 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:32,661 - app.nlp_pipeline - WARNING - Generated topic name 'Write & Understand Gtd Ideas' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:32,661 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:32,661 - app.nlp_pipeline - INFO - Generated fallback topic name: Writing & Write
+2025-01-14 15:27:32,662 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:33,622 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Happiness & Optimism
+2025-01-14 15:27:33,622 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:34,561 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Stoic Situation Judgment
+2025-01-14 15:27:34,562 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:35,431 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:35,431 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:35,431 - app.nlp_pipeline - INFO - Generated fallback topic name: Ingrained & Letting
+2025-01-14 15:27:35,431 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:36,300 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:36,300 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:36,300 - app.nlp_pipeline - INFO - Generated fallback topic name: Morphic & Memory
+2025-01-14 15:27:36,301 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:37,305 - app.nlp_pipeline - WARNING - Generated topic name 'Striiv Pedometer Virtual Chance Company' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:37,305 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:37,305 - app.nlp_pipeline - INFO - Generated fallback topic name: Striiv & Pedometer
+2025-01-14 15:27:37,306 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:38,310 - app.nlp_pipeline - WARNING - Generated topic name 'Field Synthesis New Process Appearance' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:38,310 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:38,310 - app.nlp_pipeline - INFO - Generated fallback topic name: Field & Synthesis
+2025-01-14 15:27:38,310 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:39,271 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:39,271 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:39,271 - app.nlp_pipeline - INFO - Generated fallback topic name: Secret & Esoteric
+2025-01-14 15:27:39,272 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:40,500 - app.nlp_pipeline - WARNING - Generated topic name 'God_Illusory_Threatened_Belief_Emotional' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:40,500 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:40,500 - app.nlp_pipeline - INFO - Generated fallback topic name: God & Illusory
+2025-01-14 15:27:40,501 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:41,686 - app.nlp_pipeline - WARNING - Generated topic name 'Please Respond With The Topic Name That You Think ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:41,686 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:41,686 - app.nlp_pipeline - INFO - Generated fallback topic name: Sunday & Christian
+2025-01-14 15:27:41,687 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:42,647 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Autonomous Engram Machine
+2025-01-14 15:27:42,647 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:43,559 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:43,559 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:43,559 - app.nlp_pipeline - INFO - Generated fallback topic name: Layer & Ability
+2025-01-14 15:27:43,560 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:44,452 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: White Bear Thinking
+2025-01-14 15:27:44,453 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:45,657 - app.nlp_pipeline - WARNING - Generated topic name 'Th Century Calendar Interest Gain What Is Your Sug' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:45,657 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:45,657 - app.nlp_pipeline - INFO - Generated fallback topic name: 20Th & Gain
+2025-01-14 15:27:45,658 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:46,528 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:46,528 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:46,528 - app.nlp_pipeline - INFO - Generated fallback topic name: Choice & Life
+2025-01-14 15:27:46,529 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:47,423 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:47,423 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:47,423 - app.nlp_pipeline - INFO - Generated fallback topic name: Immortal & Agriculture
+2025-01-14 15:27:47,424 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:48,450 - app.nlp_pipeline - WARNING - Generated topic name 'Everyone Starts Tough Effort Take' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:48,450 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:48,450 - app.nlp_pipeline - INFO - Generated fallback topic name: Everyone & Tough
+2025-01-14 15:27:48,451 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:49,614 - app.nlp_pipeline - WARNING - Generated topic name 'Contextual Accomplishments Ended In The Park & Ben' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:49,614 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:49,614 - app.nlp_pipeline - INFO - Generated fallback topic name: Context & Bench
+2025-01-14 15:27:49,615 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:50,847 - app.nlp_pipeline - WARNING - Generated topic name 'Suffering & Identity Necessity Specialization Plea' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:50,847 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:50,847 - app.nlp_pipeline - INFO - Generated fallback topic name: Suffering & Identity
+2025-01-14 15:27:50,848 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:51,898 - app.nlp_pipeline - WARNING - Generated topic name 'Slave Survival Status In Modern Npc World' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:51,898 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:51,898 - app.nlp_pipeline - INFO - Generated fallback topic name: Slave & Survival
+2025-01-14 15:27:51,899 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:52,813 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Deep Work Routine Software
+2025-01-14 15:27:52,813 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:53,750 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Information Perception Space Perspective
+2025-01-14 15:27:53,750 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:54,642 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:54,642 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:54,642 - app.nlp_pipeline - INFO - Generated fallback topic name: Failure & Lacking
+2025-01-14 15:27:54,643 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:55,535 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Subconscious Help
+2025-01-14 15:27:55,536 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:56,517 - app.nlp_pipeline - WARNING - Generated topic name 'State Of Consciousness Altered Today' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:56,517 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:56,517 - app.nlp_pipeline - INFO - Generated fallback topic name: State & Joke
+2025-01-14 15:27:56,518 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:57,499 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Investing Toward Future Goals
+2025-01-14 15:27:57,500 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:58,482 - app.nlp_pipeline - WARNING - Generated topic name 'Men Living Through Simulation & Acting' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:58,482 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:58,482 - app.nlp_pipeline - INFO - Generated fallback topic name: Simulation & Acting
+2025-01-14 15:27:58,483 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:27:59,511 - app.nlp_pipeline - WARNING - Generated topic name 'Discomfort Management Is This Acceptable' doesn't meet rules, falling back to simple naming
+2025-01-14 15:27:59,511 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:27:59,511 - app.nlp_pipeline - INFO - Generated fallback topic name: Discomfort & Cause
+2025-01-14 15:27:59,512 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:00,537 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Intrinsic Purpose & Talk
+2025-01-14 15:28:00,537 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:01,451 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:01,451 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:01,451 - app.nlp_pipeline - INFO - Generated fallback topic name: Statement & Men
+2025-01-14 15:28:01,451 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:02,545 - app.nlp_pipeline - WARNING - Generated topic name 'Cat Metaphysics Science Hypothesis Empirical' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:02,545 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:02,545 - app.nlp_pipeline - INFO - Generated fallback topic name: Cat & Metaphysics
+2025-01-14 15:28:02,546 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:03,460 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Inspiring Intent
+2025-01-14 15:28:03,460 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:04,688 - app.nlp_pipeline - WARNING - Generated topic name 'Note: Please Provide The Topic Name In Exactly 2-4' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:04,688 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:04,688 - app.nlp_pipeline - INFO - Generated fallback topic name: Note & Permanent
+2025-01-14 15:28:04,689 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:05,669 - app.nlp_pipeline - WARNING - Generated topic name 'Five Hand Role Clarity Different' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:05,669 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:05,669 - app.nlp_pipeline - INFO - Generated fallback topic name: Clarity & Different
+2025-01-14 15:28:05,670 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:06,540 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Walk & Train
+2025-01-14 15:28:06,541 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:07,635 - app.nlp_pipeline - WARNING - Generated topic name 'Neuron & Brain Structure For Movement Integrity' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:07,636 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:07,636 - app.nlp_pipeline - INFO - Generated fallback topic name: Neuron & Brain
+2025-01-14 15:28:07,636 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:08,686 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Excited Programmer'S Workflow Structure
+2025-01-14 15:28:08,687 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:09,915 - app.nlp_pipeline - WARNING - Generated topic name 'Happiness & Negativity Please Let Me Know If You H' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:09,916 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:09,916 - app.nlp_pipeline - INFO - Generated fallback topic name: Happiness & Negative
+2025-01-14 15:28:09,916 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:11,148 - app.nlp_pipeline - WARNING - Generated topic name 'Pain & Pleasure Please Let Me Know If You Have Any' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:11,148 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:11,148 - app.nlp_pipeline - INFO - Generated fallback topic name: Pain & Pleasure
+2025-01-14 15:28:11,148 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:12,040 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Draft & Polish
+2025-01-14 15:28:12,041 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:13,275 - app.nlp_pipeline - WARNING - Generated topic name 'Traction & Triggers Please Let Me Know If You Have' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:13,275 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:13,275 - app.nlp_pipeline - INFO - Generated fallback topic name: Traction & Trigger
+2025-01-14 15:28:13,275 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:14,492 - app.nlp_pipeline - WARNING - Generated topic name 'Indistractable & Excitement In The Workplace: Libe' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:14,492 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:14,492 - app.nlp_pipeline - INFO - Generated fallback topic name: Indistractable & Excitement
+2025-01-14 15:28:14,493 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:15,463 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Towards Indifference Universe Cry
+2025-01-14 15:28:15,463 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:16,641 - app.nlp_pipeline - WARNING - Generated topic name 'Body Instincts Please Let Me Know If This Meets Yo' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:16,641 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:16,641 - app.nlp_pipeline - INFO - Generated fallback topic name: Body & Instinct
+2025-01-14 15:28:16,642 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:17,735 - app.nlp_pipeline - WARNING - Generated topic name 'Treat Thing Trusting Spent Pinstripe' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:17,735 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:17,735 - app.nlp_pipeline - INFO - Generated fallback topic name: Treat & Thing
+2025-01-14 15:28:17,735 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:18,693 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Feel & Hate
+2025-01-14 15:28:18,694 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:19,816 - app.nlp_pipeline - WARNING - Generated topic name 'Essentialism Distinguishes Wisest & Besser Passage' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:19,816 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:19,816 - app.nlp_pipeline - INFO - Generated fallback topic name: Essentialism & Distinguishes
+2025-01-14 15:28:19,816 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:21,075 - app.nlp_pipeline - WARNING - Generated topic name 'Became Fun Idea Developer Please Let Me Know If Yo' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:21,075 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:21,075 - app.nlp_pipeline - INFO - Generated fallback topic name: Became & Idea
+2025-01-14 15:28:21,075 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:22,333 - app.nlp_pipeline - WARNING - Generated topic name 'Ether Abundance Is This A Clear, Concise Name For ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:22,333 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:22,333 - app.nlp_pipeline - INFO - Generated fallback topic name: Ether & Told
+2025-01-14 15:28:22,334 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:23,592 - app.nlp_pipeline - WARNING - Generated topic name 'Distraction Begs To Be Replaced & Played Please Le' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:23,592 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:23,592 - app.nlp_pipeline - INFO - Generated fallback topic name: Distraction & Playing
+2025-01-14 15:28:23,593 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:24,672 - app.nlp_pipeline - WARNING - Generated topic name 'Tantalus' Curse & Yearning Reach' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:24,672 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:24,672 - app.nlp_pipeline - INFO - Generated fallback topic name: Tantalus & Curse
+2025-01-14 15:28:24,673 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:25,598 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:25,598 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:25,598 - app.nlp_pipeline - INFO - Generated fallback topic name: Remembrane & Perceptual
+2025-01-14 15:28:25,598 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:26,862 - app.nlp_pipeline - WARNING - Generated topic name 'Shore & Sufi Please Respond With The Topic Name Th' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:26,862 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:26,862 - app.nlp_pipeline - INFO - Generated fallback topic name: Shore & Italo
+2025-01-14 15:28:26,862 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:27,834 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Write & Show Efficiently
+2025-01-14 15:28:27,835 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:28,832 - app.nlp_pipeline - WARNING - Generated topic name 'Great Miracle Science Explain Term' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:28,832 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:28,832 - app.nlp_pipeline - INFO - Generated fallback topic name: Great & Miracle
+2025-01-14 15:28:28,832 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:29,918 - app.nlp_pipeline - WARNING - Generated topic name 'Burning Goal Basis Planning & Thorough' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:29,918 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:29,918 - app.nlp_pipeline - INFO - Generated fallback topic name: Burning & Goal
+2025-01-14 15:28:29,918 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:31,184 - app.nlp_pipeline - WARNING - Generated topic name 'Protons & Electrons Describe Quantum Overthrown Pl' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:31,184 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:31,184 - app.nlp_pipeline - INFO - Generated fallback topic name: Proton & Electron
+2025-01-14 15:28:31,185 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:28:32,226 - app.nlp_pipeline - WARNING - Generated topic name 'Advice & Cutting Edge Thinking' doesn't meet rules, falling back to simple naming
+2025-01-14 15:28:32,226 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:28:32,226 - app.nlp_pipeline - INFO - Generated fallback topic name: Advice & Else
+2025-01-14 15:28:32,318 - root - INFO - Successfully created 61 topics
+2025-01-14 15:32:37,842 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:32:37,842 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:32:40,284 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:32:40,284 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:32:40,410 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:33:37,540 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:33:37,541 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:33:39,145 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:33:39,145 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:33:39,241 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:33:42,229 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:43,388 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Body Healing Terror Voice
+2025-01-14 15:33:43,390 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:44,486 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Stoic Situation Judgment Distressed Tranquility
+2025-01-14 15:33:44,486 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:45,712 - app.nlp_pipeline - WARNING - Generated topic name 'Machine & Material Based True Atom Please Let Me K' doesn't meet rules, falling back to simple naming
+2025-01-14 15:33:45,713 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:33:45,713 - app.nlp_pipeline - INFO - Generated fallback topic name: Machine & True
+2025-01-14 15:33:45,713 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:46,738 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Distraction Management & Behavioral Causes
+2025-01-14 15:33:46,739 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:47,878 - app.nlp_pipeline - WARNING - Generated topic name 'Happiness & Optimism For Worthy Living Via Yoga' doesn't meet rules, falling back to simple naming
+2025-01-14 15:33:47,878 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:33:47,878 - app.nlp_pipeline - INFO - Generated fallback topic name: Happiness & Optimism
+2025-01-14 15:33:47,879 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:48,882 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Striiv Pedometer Virtual Chance Company
+2025-01-14 15:33:48,883 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:49,753 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Note & Write
+2025-01-14 15:33:49,754 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:50,737 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:33:50,737 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:33:50,737 - app.nlp_pipeline - INFO - Generated fallback topic name: Sunday & Christian
+2025-01-14 15:33:50,738 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:51,719 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Secret Esoteric Spirit Book
+2025-01-14 15:33:51,720 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:52,770 - app.nlp_pipeline - WARNING - Generated topic name 'Neuron Brain & Weight Dmn Furthermore' doesn't meet rules, falling back to simple naming
+2025-01-14 15:33:52,770 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:33:52,770 - app.nlp_pipeline - INFO - Generated fallback topic name: Neuron & Brain
+2025-01-14 15:33:52,771 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:53,776 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Ability Slide & Absorb Talents
+2025-01-14 15:33:53,776 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:54,670 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:33:54,670 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:33:54,670 - app.nlp_pipeline - INFO - Generated fallback topic name: Morphic & Memory
+2025-01-14 15:33:54,671 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:55,563 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:33:55,563 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:33:55,563 - app.nlp_pipeline - INFO - Generated fallback topic name: Writing & Gtd
+2025-01-14 15:33:55,564 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:56,456 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: White Bear Thinking
+2025-01-14 15:33:56,457 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:57,505 - app.nlp_pipeline - WARNING - Generated topic name 'Miracle Today - Great Science Joke' doesn't meet rules, falling back to simple naming
+2025-01-14 15:33:57,505 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:33:57,505 - app.nlp_pipeline - INFO - Generated fallback topic name: Miracle & Today
+2025-01-14 15:33:57,505 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:58,600 - app.nlp_pipeline - WARNING - Generated topic name 'God Threatened By Illusory Mold Emotional' doesn't meet rules, falling back to simple naming
+2025-01-14 15:33:58,600 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:33:58,600 - app.nlp_pipeline - INFO - Generated fallback topic name: God & Threatened
+2025-01-14 15:33:58,601 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:33:59,832 - app.nlp_pipeline - WARNING - Generated topic name '& Agriculture Nowadays: Magnanimity In The Face Of' doesn't meet rules, falling back to simple naming
+2025-01-14 15:33:59,832 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:33:59,832 - app.nlp_pipeline - INFO - Generated fallback topic name: Immortal & Agriculture
+2025-01-14 15:33:59,832 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:01,017 - app.nlp_pipeline - WARNING - Generated topic name 'A Clear, Concise Name For The Topic Based On The G' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:01,017 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:01,017 - app.nlp_pipeline - INFO - Generated fallback topic name: Courage & Assumption
+2025-01-14 15:34:01,017 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:01,955 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Context & Noise Get Everything
+2025-01-14 15:34:01,956 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:02,892 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:02,892 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:02,892 - app.nlp_pipeline - INFO - Generated fallback topic name: Failure & Lacking
+2025-01-14 15:34:02,892 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:03,784 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:03,785 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:03,785 - app.nlp_pipeline - INFO - Generated fallback topic name: Goal & Intrinsic
+2025-01-14 15:34:03,785 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:04,747 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: New Field Appearance Level Synthesis
+2025-01-14 15:34:04,747 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:05,774 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Unconscious Help For Positive Achievement
+2025-01-14 15:34:05,775 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:06,713 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Information Perception Space Perspective
+2025-01-14 15:34:06,713 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:07,584 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Deep Work Software
+2025-01-14 15:34:07,584 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:08,657 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Inspiring Intentional Rhetoric & Essentials
+2025-01-14 15:34:08,657 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:09,890 - app.nlp_pipeline - WARNING - Generated topic name 'Statement Men Made & Foot Please Let Me Know If Yo' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:09,890 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:09,890 - app.nlp_pipeline - INFO - Generated fallback topic name: Statement & Men
+2025-01-14 15:34:09,890 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:10,872 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Editor'S Draft & Addition
+2025-01-14 15:34:10,873 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:12,066 - app.nlp_pipeline - WARNING - Generated topic name 'Assemblage Glow State Please Let Me Know If You Ha' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:12,066 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:12,066 - app.nlp_pipeline - INFO - Generated fallback topic name: Assemblage & Static
+2025-01-14 15:34:12,067 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:13,196 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Programmer'S Structure Showers
+2025-01-14 15:34:13,196 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:14,223 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Cat Metaphysics Hypothesis Science
+2025-01-14 15:34:14,224 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:15,251 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Th Century Movie Viewing Routes
+2025-01-14 15:34:15,252 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:16,165 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:16,165 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:16,165 - app.nlp_pipeline - INFO - Generated fallback topic name: Pleasure & Pain
+2025-01-14 15:34:16,166 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:17,306 - app.nlp_pipeline - WARNING - Generated topic name 'Please Let Me Know When You Are Ready With The Top' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:17,306 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:17,306 - app.nlp_pipeline - INFO - Generated fallback topic name: Suffering & Identity
+2025-01-14 15:34:17,306 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:18,378 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Cry Universe Towards Indifference Lose
+2025-01-14 15:34:18,378 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:19,609 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Indistractable Workplace Excitement Please Create 
+2025-01-14 15:34:19,609 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:20,841 - app.nlp_pipeline - WARNING - Generated topic name 'Internal Trigger & Traction Please Select The Best' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:20,841 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:20,841 - app.nlp_pipeline - INFO - Generated fallback topic name: Traction & Trigger
+2025-01-14 15:34:20,842 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:21,873 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Acting Accomplishments & Clarity
+2025-01-14 15:34:21,874 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:22,955 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Treat Thing Trusting Spent Pinstripe
+2025-01-14 15:34:22,956 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:24,019 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Loud Nobody Talking Carriage Marble
+2025-01-14 15:34:24,020 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:25,042 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Everyone Starts Successful Team Intents
+2025-01-14 15:34:25,043 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:26,117 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Essentialism Activity Aber Sake Wisest
+2025-01-14 15:34:26,118 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:27,371 - app.nlp_pipeline - WARNING - Generated topic name 'Different Levels Of Clarity & Planning Please Let ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:27,371 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:27,371 - app.nlp_pipeline - INFO - Generated fallback topic name: Different & Five
+2025-01-14 15:34:27,371 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:28,558 - app.nlp_pipeline - WARNING - Generated topic name 'Write & Learn Please Name The Topic Based On The G' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:28,558 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:28,558 - app.nlp_pipeline - INFO - Generated fallback topic name: Write & Expert
+2025-01-14 15:34:28,558 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:29,661 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Control Frequently Balance Talking Habitually
+2025-01-14 15:34:29,661 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:30,652 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Absolute Functioning Testimony
+2025-01-14 15:34:30,653 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:31,735 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Perceptual Pursuit Of Sensual History
+2025-01-14 15:34:31,736 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:32,797 - app.nlp_pipeline - WARNING - Generated topic name 'Became Fun To Develop Respective Ideas' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:32,797 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:32,797 - app.nlp_pipeline - INFO - Generated fallback topic name: Became & Idea
+2025-01-14 15:34:32,798 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:34,059 - app.nlp_pipeline - WARNING - Generated topic name 'Burning Goal Basis Planning Please Let Me Know If ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:34,059 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:34,059 - app.nlp_pipeline - INFO - Generated fallback topic name: Burning & Goal
+2025-01-14 15:34:34,060 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:35,079 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Opinion Avoider
+2025-01-14 15:34:35,079 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:36,347 - app.nlp_pipeline - WARNING - Generated topic name 'Ether Abundance Is This A Clear, Concise Name For ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:36,347 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:36,347 - app.nlp_pipeline - INFO - Generated fallback topic name: Ether & Told
+2025-01-14 15:34:36,347 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:37,320 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Happiness Negativity Path
+2025-01-14 15:34:37,321 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:38,410 - app.nlp_pipeline - WARNING - Generated topic name 'Please Let Me Know When You Are Ready' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:38,410 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:38,410 - app.nlp_pipeline - INFO - Generated fallback topic name: Dialogue & Hundred
+2025-01-14 15:34:38,410 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:39,656 - app.nlp_pipeline - WARNING - Generated topic name 'Body & Instinct Please Let Me Know If I Can Be Of ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:39,656 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:39,656 - app.nlp_pipeline - INFO - Generated fallback topic name: Body & Instinct
+2025-01-14 15:34:39,657 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:40,722 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Tantalus' Curse & Reach
+2025-01-14 15:34:40,722 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:41,835 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Shore Italo Calvino Sufi Anonymous
+2025-01-14 15:34:41,836 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:42,903 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Altered Land Entering Esoteric Limit
+2025-01-14 15:34:42,903 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:43,996 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: James' Multifaceted Helping Fate
+2025-01-14 15:34:43,997 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:44,908 - app.nlp_pipeline - WARNING - Generated topic name '' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:44,908 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:44,908 - app.nlp_pipeline - INFO - Generated fallback topic name: Negative & Revenge
+2025-01-14 15:34:44,909 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:46,024 - app.nlp_pipeline - WARNING - Generated topic name 'Slave Survival Status In Modern Physical World' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:46,024 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:46,024 - app.nlp_pipeline - INFO - Generated fallback topic name: Slave & Survival
+2025-01-14 15:34:46,025 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:47,071 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Prioritize Clutter Commit Posse
+2025-01-14 15:34:47,072 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:48,165 - app.nlp_pipeline - WARNING - Generated topic name 'Clever Insider Choice For People: Nicer' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:48,165 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:48,165 - app.nlp_pipeline - INFO - Generated fallback topic name: Clever & Inside
+2025-01-14 15:34:48,165 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:49,413 - app.nlp_pipeline - WARNING - Generated topic name 'Develop & Study Vision Please Create A Topic Name ' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:49,413 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:49,413 - app.nlp_pipeline - INFO - Generated fallback topic name: Develop & Study
+2025-01-14 15:34:49,414 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:50,572 - app.nlp_pipeline - INFO - Successfully generated topic name with LLaMA: Letting Personality Criticism Regret Eighty
+2025-01-14 15:34:50,573 - app.nlp_pipeline - INFO - Attempting to generate topic name with LLaMA
+2025-01-14 15:34:51,710 - app.nlp_pipeline - WARNING - Generated topic name 'Try & Insecurity In Water & Sink - A Conclusion' doesn't meet rules, falling back to simple naming
+2025-01-14 15:34:51,710 - app.nlp_pipeline - INFO - Using fallback topic naming method
+2025-01-14 15:34:51,710 - app.nlp_pipeline - INFO - Generated fallback topic name: Try & Insecurity
+2025-01-14 15:34:51,797 - root - INFO - Successfully created 66 topics
+2025-01-14 15:41:38,140 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:41:38,140 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:41:40,219 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:41:40,219 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:41:40,348 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:45:16,485 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:45:16,485 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:45:16,485 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:45:16,485 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:45:18,502 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:45:18,503 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:45:18,503 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:45:18,503 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:45:18,645 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:45:18,650 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:48:31,737 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:48:31,737 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:48:33,747 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:48:33,747 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:48:33,837 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 15:59:50,186 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 15:59:50,187 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 15:59:52,095 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 15:59:52,095 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 15:59:52,216 - app.nlp_pipeline - INFO - LLaMA model loaded successfully
+2025-01-14 16:16:41,830 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-14 16:16:41,830 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-01-14 16:16:44,411 - app.nlp_pipeline - INFO - Looking for LLaMA model at: models/llama/llama-2-7b-chat.Q4_K_M.gguf
+2025-01-14 16:16:44,411 - app.nlp_pipeline - INFO - Found LLaMA model, attempting to initialize...
+2025-01-14 16:16:44,563 - app.nlp_pipeline - INFO - LLaMA model loaded successfully

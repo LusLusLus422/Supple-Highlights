@@ -13,8 +13,8 @@ database models for data persistence.
 import fitz  # PyMuPDF
 from typing import List, Dict, Any
 import os
-from models.models import Document, Highlight
-from models.base import SessionLocal
+from app.models.models import Document, Highlight
+from app.models.base import SessionLocal
 from datetime import datetime
 import re
 

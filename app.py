@@ -13,7 +13,6 @@ Dependencies:
     - streamlit: Web application framework
     - PyMuPDF: PDF processing
     - pyvis: Network visualization
-    - gensim: Topic modeling
     - nltk: Natural language processing
     - SQLAlchemy: Database operations
 """
@@ -23,12 +22,11 @@ import fitz  # PyMuPDF
 import os
 import tempfile
 from datetime import datetime
-from models.base import SessionLocal, engine, Base
-from models.models import Document, Highlight
+from app.models.base import SessionLocal, get_db_session, engine, Base
+from app.models.models import Document, Highlight, Topic
 from pyvis.network import Network
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-from gensim import corpora, models
 import networkx as nx
 import numpy as np
 from io import BytesIO
@@ -38,9 +36,30 @@ import string
 import re
 import html
 from app.directory_scanner import DirectoryScanner
+from app.nlp_pipeline import NLPPipeline
+import logging
+from contextlib import contextmanager
 
-# Initialize scanner and NLTK components
+# Initialize scanner, NLP pipeline and NLTK components
 scanner = DirectoryScanner()
+nlp_pipeline = NLPPipeline()
+
+# Database session management
+@contextmanager
+def get_db():
+    """Database session context manager."""
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+# Create global session state for database session
+if 'db_session' not in st.session_state:
+    st.session_state.db_session = SessionLocal()
+
+# Use session from session state
+session = st.session_state.db_session
 
 # Download required NLTK data with error handling
 try:
@@ -58,10 +77,6 @@ Base.metadata.create_all(bind=engine)
 # Initialize session state variables for topic modeling
 if 'topics' not in st.session_state:
     st.session_state.topics = None
-if 'topic_model' not in st.session_state:
-    st.session_state.topic_model = None
-if 'dictionary' not in st.session_state:
-    st.session_state.dictionary = None
 
 # Streamlit page configuration
 st.set_page_config(
@@ -355,72 +370,24 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-def preprocess_text(text):
-    """Preprocess text for topic modeling."""
+def create_topic_model(highlights):
+    """Create a topic model from the given highlights."""
     try:
-        text = text.lower()
-        text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
-        words = text.split()
-        words = [word for word in words if len(word) > 1]
-        try:
-            stop_words = set(stopwords.words('english'))
-            custom_stops = stop_words - {'between', 'through', 'again', 'against', 'once', 'during'}
-            words = [word for word in words if word not in custom_stops]
-        except Exception as e:
-            st.warning(f"Could not load stopwords, continuing without stopword removal: {str(e)}")
-        return words if words else []
-    except Exception as e:
-        st.error(f"Error in text preprocessing: {str(e)}")
-        return []
+        if len(highlights) < 2:
+            st.warning("At least 2 highlights are needed for topic modeling.")
+            return
 
-def create_topic_model(documents):
-    """Create topic model from highlights."""
-    try:
-        texts = []
-        for doc in documents:
-            # Combine highlights but maintain some structure with periods
-            doc_text = ". ".join([h.text for h in doc.highlights])
-            words = preprocess_text(doc_text)
-            if words:
-                texts.append(words)
-        
-        if not texts:
-            st.error("No valid text found to process for topic modeling.")
-            return None
-        
-        dictionary = corpora.Dictionary(texts)
-        # Adjust filter parameters to be more strict
-        dictionary.filter_extremes(no_below=2, no_above=0.8, keep_n=20000)
-        corpus = [dictionary.doc2bow(text) for text in texts]
-        
-        if not corpus or not any(corp for corp in corpus):
-            st.error("No valid terms found after preprocessing.")
-            return None
-        
-        num_topics = min(15, len(documents))
-        lda_model = models.LdaModel(
-            corpus,
-            num_topics=num_topics,
-            id2word=dictionary,
-            passes=50,  # Increased passes for better topic separation
-            random_state=42,
-            minimum_probability=0.01,  # Set minimum probability threshold
-            alpha='asymmetric',  # Changed to asymmetric for better topic distribution
-            eta='auto',
-            chunksize=2000,
-            iterations=1000  # Increased iterations for better convergence
-        )
-        
-        st.session_state.topics = lda_model.show_topics(formatted=False, num_words=15)
-        st.session_state.topic_model = lda_model
-        st.session_state.dictionary = dictionary
-        
-        st.success(f"Generated {num_topics} topics successfully!")
-        return lda_model
-        
+        # Process highlights using NLP pipeline
+        with st.spinner("Processing highlights..."):
+            nlp_pipeline.process_highlights(highlights)
+            st.success("Topics generated successfully!")
+            
     except Exception as e:
-        st.error(f"Error in topic modeling: {str(e)}")
-        return None
+        logging.error(f"Database error: {str(e)}")
+        st.error(f"Error accessing database: {str(e)}")
+        return False
+    
+    return True
 
 def create_knowledge_graph(documents):
     """Create a knowledge graph from documents."""
@@ -466,62 +433,31 @@ def create_knowledge_graph(documents):
                 size=size
             )
         
-        if st.session_state.topics:
-            # First, calculate topic strengths for all documents
-            doc_topic_weights = {}
-            for doc in documents_with_highlights:
-                doc_text = ". ".join([h.text for h in doc.highlights])
-                tokens = preprocess_text(doc_text)
-                bow = st.session_state.dictionary.doc2bow(tokens)
-                # Get topic distribution
-                doc_topics = st.session_state.topic_model.get_document_topics(
-                    bow, 
-                    minimum_probability=0.01
-                )
-                doc_topic_weights[doc.id] = doc_topics
-            
-            # Calculate threshold based on document length
-            def calculate_threshold(num_highlights):
-                # Dynamic threshold that decreases as number of highlights increases
-                base_threshold = 0.1  # 10% base threshold
-                return max(0.05, base_threshold / (1 + num_highlights/10))
-            
-            # Add topic nodes and edges
-            for idx, (topic_id, word_scores) in enumerate(st.session_state.topics):
-                has_connections = False
-                edges_to_add = []
-                
-                for doc in documents_with_highlights:
-                    doc_topics = doc_topic_weights[doc.id]
-                    num_highlights = len(doc.highlights)
-                    threshold = calculate_threshold(num_highlights)
-                    
-                    for t_id, weight in doc_topics:
-                        if t_id == idx and weight > threshold:
-                            has_connections = True
-                            edges_to_add.append((doc.id, weight))
-                
-                if has_connections:
-                    # Get top words and their scores for better topic representation
-                    top_words = ", ".join([f"{word} ({score:.3f})" for word, score in word_scores[:3]])
+        # Add topic nodes and edges
+        topics_added = set()
+        for doc in documents_with_highlights:
+            for highlight in doc.highlights:
+                if highlight.topic and highlight.topic.name not in topics_added:
+                    # Add topic node
+                    topic_name = highlight.topic.name
                     G.add_node(
-                        f"topic_{idx}",
-                        label=f"Topic {idx+1}",
-                        title=f"Topic {idx+1}\n{top_words}",
+                        f"topic_{topic_name}",
+                        label=topic_name,
+                        title=f"Topic: {topic_name}\nKeywords: {', '.join(highlight.topic.keywords.keys())}",
                         color="#FFFFFF",
                         size=25
                     )
-                    
-                    for doc_id, weight in edges_to_add:
-                        # Scale edge width based on weight
-                        edge_width = weight * 5  # Increase edge width for visibility
-                        G.add_edge(
-                            f"doc_{doc_id}",
-                            f"topic_{idx}",
-                            value=edge_width,
-                            title=f"Strength: {weight:.3f}",
-                            width=edge_width
-                        )
+                    topics_added.add(topic_name)
+                
+                if highlight.topic:
+                    # Add edge with confidence score
+                    G.add_edge(
+                        f"doc_{doc.id}",
+                        f"topic_{highlight.topic.name}",
+                        value=highlight.topic_confidence * 5,
+                        title=f"Confidence: {highlight.topic_confidence:.3f}",
+                        width=highlight.topic_confidence * 5
+                    )
         
         return G
     except Exception as e:
@@ -531,140 +467,153 @@ def create_knowledge_graph(documents):
 def delete_document(doc_id):
     """Delete a document and its highlights from the database."""
     try:
-        db = SessionLocal()
-        doc = db.query(Document).filter(Document.id == doc_id).first()
-        if doc:
-            db.delete(doc)
-            db.commit()
-            st.session_state.topics = None
-            return True
+        with get_db_session() as session:
+            doc = session.query(Document).filter(Document.id == doc_id).first()
+            if doc:
+                session.delete(doc)
+                st.session_state.topics = None
+                return True
         return False
     except Exception as e:
-        st.error(f"Error deleting document: {str(e)}")
+        logging.error(f"Error deleting document: {str(e)}")
+        st.error("An error occurred while deleting the document. Please try again.")
         return False
-    finally:
-        db.close()
 
 def view_saved_highlights():
     """View highlights saved in the database with advanced features."""
-    db = SessionLocal()
     try:
-        documents = db.query(Document).order_by(Document.created_at.desc()).all()
-        
-        if not documents:
-            st.info("No highlights saved yet. Configure a directory and scan for PDFs to get started!")
-            return
-        
-        tab1, tab2, tab3 = st.tabs(["📚 Highlights", "📊 Topics", "🕸️ Graph"])
-        
-        with tab1:
-            st.markdown("""
-            <div style="background-color: #2D2D2D; padding: 0.75rem; border-radius: 4px; margin-bottom: 1rem;">
-                <h3 class="search-title">🔍 Search Highlights</h3>
-            </div>
-            """, unsafe_allow_html=True)
+        with get_db_session() as session:
+            # Only get documents that have highlights
+            documents = session.query(Document).filter(Document.highlights.any()).order_by(Document.created_at.desc()).all()
             
-            search_query = st.text_input("", 
-                                    placeholder="Type to search across all highlights...",
-                                    key="search",
-                                    label_visibility="collapsed")
+            if not documents:
+                st.info("No highlights saved yet. Configure a directory and scan for PDFs to get started!")
+                return
             
-            for doc in documents:
-                highlights_to_show = doc.highlights
-                if search_query:
-                    highlights_to_show = [h for h in doc.highlights if search_query.lower() in h.text.lower()]
+            tab1, tab2, tab3 = st.tabs(["📚 Highlights", "📊 Topics", "🕸️ Graph"])
+            
+            with tab1:
+                st.markdown("""
+                <div style="background-color: #2D2D2D; padding: 0.75rem; border-radius: 4px; margin-bottom: 1rem;">
+                    <h3 class="search-title">📚 Documents & Highlights</h3>
+                </div>
+                """, unsafe_allow_html=True)
                 
-                if highlights_to_show:
-                    toggle_key = f"toggle_{doc.id}"
-                    if toggle_key not in st.session_state:
-                        st.session_state[toggle_key] = True
+                search_query = st.text_input("", 
+                                        placeholder="Type to search across all highlights...",
+                                        key="search",
+                                        label_visibility="collapsed")
+                
+                if search_query:
+                    # Use semantic search from NLP pipeline
+                    results = nlp_pipeline.search(search_query)
+                    highlights_to_show = results
                     
-                    col1, col2 = st.columns([10, 1])
-                    with col1:
-                        if st.button("", key=f"toggle_btn_{doc.id}"):
-                            st.session_state[toggle_key] = not st.session_state[toggle_key]
-                            st.rerun()
+                    # Group search results by document
+                    highlights_by_doc = {}
+                    for highlight in highlights_to_show:
+                        doc = highlight.document
+                        if doc not in highlights_by_doc:
+                            highlights_by_doc[doc] = []
+                        highlights_by_doc[doc].append(highlight)
                         
-                        st.markdown(f"""
-                        <div class="document-header">
-                            <div class="document-title">📄 {html.escape(doc.filename)}</div>
-                            <div class="document-info">
-                                <span>{len(highlights_to_show)} highlights</span>
-                                <span>|</span>
-                                <span class="timestamp">Created: {doc.created_at.strftime('%Y-%m-%d %H:%M:%S')}</span>
-                                <span>|</span>
-                                <span class="timestamp">Last updated: {doc.updated_at.strftime('%Y-%m-%d %H:%M:%S')}</span>
-                            </div>
-                        </div>
-                        """, unsafe_allow_html=True)
-                    
-                    with col2:
-                        if st.button("🗑️", key=f"delete_{doc.id}"):
-                            if delete_document(doc.id):
-                                st.success(f"Deleted {doc.filename}")
-                                st.rerun()
-                    
-                    if st.session_state[toggle_key]:
-                        for highlight in highlights_to_show:
-                            # Display highlight and metadata in a single container
-                            st.markdown(
-                                f"""<div style="background-color: #2D2D2D; padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
-                                    <div style="color: #666666; font-size: 0.8rem; margin-bottom: 0.5rem;">
-                                        Page {highlight.page_number} | Added: {highlight.created_at.strftime('%Y-%m-%d %H:%M:%S')}
-                                    </div>
+                    # Display search results grouped by document
+                    for doc, highlights in highlights_by_doc.items():
+                        with st.expander(f"📄 {doc.filename} ({len(highlights)} matches)", expanded=True):
+                            for highlight in highlights:
+                                st.markdown(f"""
+                                <div style="background-color: #2D2D2D; padding: 1rem; border-radius: 4px; margin: 0.5rem 0;">
                                     <div style="color: #FFFFFF;">
                                         {highlight.text.strip()}
                                     </div>
-                                </div>""",
-                                unsafe_allow_html=True
-                            )
-        
-        with tab2:
-            if st.button("Generate Topics") or st.session_state.topics is None:
-                with st.spinner("Generating topics..."):
-                    create_topic_model(documents)
+                                    <div style="color: #999999; font-size: 0.8em; margin-top: 0.5rem;">
+                                        Page {highlight.page_number} | Created: {highlight.created_at.strftime('%Y-%m-%d %H:%M:%S')}
+                                    </div>
+                                </div>
+                                """, unsafe_allow_html=True)
+                else:
+                    # Show all documents with their highlights
+                    for doc in documents:
+                        with st.expander(f"📄 {doc.filename} ({len(doc.highlights)} highlights)", expanded=False):
+                            for highlight in doc.highlights:
+                                st.markdown(f"""
+                                <div style="background-color: #2D2D2D; padding: 1rem; border-radius: 4px; margin: 0.5rem 0;">
+                                    <div style="color: #FFFFFF;">
+                                        {highlight.text.strip()}
+                                    </div>
+                                    <div style="color: #999999; font-size: 0.8em; margin-top: 0.5rem;">
+                                        Page {highlight.page_number} | Created: {highlight.created_at.strftime('%Y-%m-%d %H:%M:%S')}
+                                    </div>
+                                </div>
+                                """, unsafe_allow_html=True)
             
-            if st.session_state.topics:
-                for idx, (_, word_scores) in enumerate(st.session_state.topics):
-                    col1, col2 = st.columns([1, 2])
-                    with col1:
-                        st.markdown(f"### Topic {idx + 1}")
-                        words = dict(word_scores)
-                        for word, score in list(words.items())[:5]:
-                            st.write(f"- {word}: {score:.3f}")
-                    
-                    with col2:
-                        try:
-                            wordcloud = WordCloud(
-                                width=400,
-                                height=200,
-                                background_color='#111111',
-                                colormap='YlOrRd'
-                            ).generate_from_frequencies(words)
+            with tab2:
+                st.markdown("""
+                <div style="background-color: #2D2D2D; padding: 0.75rem; border-radius: 4px; margin-bottom: 1rem;">
+                    <h3 class="topics-title">📊 Topic Modeling</h3>
+                </div>
+                """, unsafe_allow_html=True)
+                
+                # Get all highlights for topic modeling
+                all_highlights = []
+                for doc in documents:
+                    all_highlights.extend(doc.highlights)
+                
+                if len(all_highlights) < 2:
+                    st.warning("Add at least 2 highlights to enable topic modeling.")
+                else:
+                    if st.button("Generate Topics"):
+                        create_topic_model(all_highlights)
+                
+                # Display existing topics
+                with get_db_session() as session:
+                    topics = session.query(Topic).all()
+                    if topics:
+                        for topic in topics:
+                            with st.expander(f"📌 Topic: {topic.name}", expanded=False):
+                                st.write("**Keywords:**", ", ".join(topic.keywords.keys()))
+                                st.write("**Description:**", topic.description)
+                                st.markdown("#### Related Highlights:")
+                                
+                                # Display related highlights
+                                if topic.highlights:
+                                    for highlight in topic.highlights:
+                                        st.markdown(f"""
+                                        <div style="background-color: #2D2D2D; padding: 1rem; border-radius: 4px; margin: 0.5rem 0;">
+                                            <div style="color: #FFFFFF;">
+                                                {highlight.text.strip()}
+                                            </div>
+                                            <div style="color: #999999; font-size: 0.8em; margin-top: 0.5rem;">
+                                                From: {highlight.document.filename} (Page {highlight.page_number})
+                                            </div>
+                                        </div>
+                                        """, unsafe_allow_html=True)
+                                else:
+                                    st.info("No highlights associated with this topic.")
                             
-                            plt.figure(figsize=(8, 4), facecolor='#111111')
-                            plt.imshow(wordcloud, interpolation='bilinear')
-                            plt.axis('off')
-                            st.pyplot(plt)
-                            plt.close()
-                        except Exception as e:
-                            st.error(f"Error creating word cloud: {str(e)}")
-        
-        with tab3:
-            if st.button("Generate Knowledge Graph") or 'graph' not in st.session_state:
-                with st.spinner("Creating knowledge graph..."):
-                    graph = create_knowledge_graph(documents)
-                    if graph:
-                        try:
-                            graph.save_graph("temp_graph.html")
-                            with open("temp_graph.html", "r", encoding="utf-8") as f:
-                                graph_html = f.read()
-                            st.components.v1.html(graph_html, height=700)
-                            os.remove("temp_graph.html")
-                        except Exception as e:
-                            st.error(f"Error displaying graph: {str(e)}")
-    finally:
-        db.close()
+                            # Add a separator between topics
+                            st.markdown("---")
+            
+            with tab3:
+                st.markdown("""
+                <div style="background-color: #2D2D2D; padding: 0.75rem; border-radius: 4px; margin-bottom: 1rem;">
+                    <h3 class="graph-title">🕸️ Knowledge Graph</h3>
+                </div>
+                """, unsafe_allow_html=True)
+                
+                if st.button("Generate Knowledge Graph"):
+                    with st.spinner("Creating knowledge graph..."):
+                        G = create_knowledge_graph(documents)
+                        if G:
+                            # Save graph to HTML file
+                            with tempfile.NamedTemporaryFile(delete=False, suffix='.html') as f:
+                                G.save_graph(f.name)
+                                # Display the graph in an iframe
+                                st.components.v1.html(open(f.name, 'r').read(), height=600)
+                
+    except Exception as e:
+        logging.error(f"Error viewing saved highlights: {str(e)}")
+        st.error("An error occurred while viewing highlights. Please try again.")
 
 # Main app layout
 st.title("Supple Highlights")

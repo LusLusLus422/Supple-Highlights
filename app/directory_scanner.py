@@ -14,8 +14,8 @@ Typical usage example:
 import os
 from datetime import datetime
 from typing import List, Optional, Dict, Tuple
-from models.models import Document, Highlight, WatchedDirectory
-from models.base import SessionLocal
+from app.models.models import Document, Highlight, WatchedDirectory
+from app.models.base import SessionLocal
 from .pdf_processor import PDFProcessor
 
 class DirectoryScanner:
